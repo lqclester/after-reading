@@ -34,3 +34,9 @@ Store1 和 Store2代表两条写入指令。在Store2写入执行前，保证Sto
 1.运行结果并不依赖变量的当前值，或者能够确保只有单一的线程修改变量的值。
 
 2.变量不需要与其他的状态变量共同参与不变约束
+
+## 其他作用
+ volatile除了保证可见性和阻止指令重排，还解决了long类型和double类型数据的8字节赋值问题
+ 
+# 记录
+阅读[漫画：什么是volatile关键字？（整合版）](https://mp.weixin.qq.com/s/DZkGRTan2qSzJoDAx7QJag##)的总结
