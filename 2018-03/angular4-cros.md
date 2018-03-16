@@ -1,5 +1,6 @@
 # Angular4，开发环境下跨域,session共享问题
 > 后台：spring + springMvc + mybatis
+> times:2018/03/02
 
 ##场景
 angular4项目，前端使用`ng serve`启动后,默认是localhost:4200.

@@ -13,8 +13,9 @@
 
 ## 2018年三月
 1. [angular4跨域和session拦截解决](https://github.com/lqclester/after-reading/blob/master/2018-03/angular4-cros.md)
-
-
+2. [angular4前端项目集成到后端](https://github.com/lqclester/after-reading/blob/master/2018-03/angular4+sssm.md)
+3. [读:什么是Java内存模型](https://github.com/lqclester/after-reading/blob/master/2018-03/java-memory.md)
+4. [重温单例模式](https://github.com/lqclester/after-reading/blob/master/2018-03/Singleton.md)
 
 # 学习中
 ## cmsblogs-死磕Java并发
