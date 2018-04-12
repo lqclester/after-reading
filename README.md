@@ -17,6 +17,8 @@
 3. [读:什么是Java内存模型](https://github.com/lqclester/after-reading/blob/master/2018-03/java-memory.md)
 4. [重温单例模式](https://github.com/lqclester/after-reading/blob/master/2018-03/Singleton.md)
 
+## 2018年四月
+
 # 学习中
 ## cmsblogs-死磕Java并发
 > [全系列](http://cmsblogs.com/?p=2122)地址

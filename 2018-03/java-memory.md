@@ -14,5 +14,25 @@
 2. 保证了线程在同步块之前或者期间写入动作，对于后续进入该代码块的线程是可见的
 3. 使CPU缓存失效，从而使变量从主内存中重新加载
 
+# volatile可以做什么
+
+```
+public class VolatileExample {
+
+    int x =0;
+    volatile boolean v = false;
+
+    public void write() {
+        x =42;
+        v = true;
+    }
+
+    public void read() {
+        if (v) {
+            // thread.A 调用write, thread.B 调用read, v= true,x一定等于42
+        }
+    }
+}
+```
 # 读文
 [什么是Java内存模型](https://mp.weixin.qq.com/s/F425mhUVvKDoDeAWujJRTw)

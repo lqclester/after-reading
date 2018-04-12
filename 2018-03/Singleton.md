@@ -1,6 +1,5 @@
 # 重温单例模式
-> time:2018/03/16
->
+
 ## 单例模式
 实现：
 1. 懒汉模式： 后初始化
@@ -51,15 +50,13 @@ public class Singleton {
 }
 ```
 
-## 静态内部类
-### 编写思路
+##  静态内部类模式
+### 写的思路
+ 1. 静态内部类
+ 2. 静态构造方法
+ 3. 静态工厂方法
 
-1. 静态内部类
-2. 静态构造方法
-3. 静态工厂方法
-
-### 代码
-```
+### 源码
 public class InnerSingleton {
 
     private static class LazyHolder {
@@ -72,15 +69,6 @@ public class InnerSingleton {
         return LazyHolder.INSTANCE;
     }
 }
-```
-
-## 枚举模式
-### 代码
-```
-public enum  SingletonEnum {
-    INSTANCE;
-}
-```
 
 ## 参考
 [漫画：什么是单例模式？（整合版](https://mp.weixin.qq.com/s?__biz=MzIxMjE5MTE1Nw==&mid=2653192251&idx=2&sn=4acce2985ab4fcc908235891c9213628&chksm=8c99f2e1bbee7bf7f64132bb58d3023f79b3c11fe2043dcd29fe07f4ddb5b3c7d375252d8555&scene=21#wechat_redirect)

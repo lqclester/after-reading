@@ -43,3 +43,31 @@ task getFrontend(type: Copy) {
 	println 'getFrontend end.'
 }
 ```
+
+## 后端细节处理
+### 路由处理
+#### ，那怎么才能其他页面?
+
+1. 把Anuglar打包后的包放到后端项目的resource路径
+配置mvc:resources
+`<mvc:resources mapping="/app/**" location="/frontend/"  order="1"/>`
+2.  由于angular是单页应用，所以只有index.html，因此要把所有请求angular的都转发到index
+```
+Pattern path = Pattern.compile(request.getContextPath() + '/app/.*');
+if(path.matcher(request.getRequestURI()).matches()) {
+    RequestDispatcher rd = request.getRequestDispatcher("/app/index.html");
+    rd.forward(request, response);
+} else {
+    filterChain.doFilter(request, response);
+}
+```
+3. image url 问题
+augular的[bug](https://github.com/angular/angular-cli/issues/9347)
+
+[bug](https://github.com/angular/angular-cli/issues/9835)
+
+```
+A browser only applies the base href to relative assets. The baseHref option is generally the more appropriate option to use (vs. the deployUrl option). Changing the <img src="/assets/sample.png"> to <img src="assets/sample.png"> should allow the browser to apply the configured base href value.
+
+Note also that based on the HTML spec., the base HREF value should end with a / to indicate the last path segment is a directory and not a file.
+```
