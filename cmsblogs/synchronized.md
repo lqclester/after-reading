@@ -27,7 +27,7 @@
 2. Mark Word用于存储对象自身的运行时数据，如哈希码（HashCode）、GC分代年龄、锁状态标志、线程持有的锁、偏向线程 ID、偏向时间戳、**LockWord** 等等。
 
 3. 根据不同的状态位Mark World中存放不同的内容，如上图所示在轻量级锁中，Mark Word被分成两部分，刚开始时LockWord为被设置为HashCode、最低三位表示LockWord所处的状态，初始状态为001表示无锁状态。
-![Mark Word](images/2018/04/mw.png)
+![Mark Word](https://github.com/lqclester/after-reading/blob/master/images/markword.png)
 
 ## 偏向锁
 
