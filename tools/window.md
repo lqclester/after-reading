@@ -1,4 +1,4 @@
-# scoop
+	# scoop
 > Scoop is a command-line installer for Windows inspired by Homebrew.
 ## 安装
 ```

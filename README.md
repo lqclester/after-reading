@@ -1,4 +1,9 @@
 # after-reading
+## 总结
+ [1. java内存模型(JMM)](https://github.com/lqclester/after-reading/blob/master/cmsblogs/java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B(JMM).md)
+
+## 2018年九月
+ 1. [java内存模型(JMM)](https://github.com/lqclester/after-reading/blob/master/cmsblogs/java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B(JMM).md)
 读后感、问题记录
 ## 2018年一月
 1. [volatile关键字的作用](https://github.com/lqclester/after-reading/blob/master/2018-01/volatile%E7%9A%84%E4%BD%9C%E7%94%A8.md)
@@ -20,7 +25,7 @@
 
 # 小工具
 
-# 学习中
+# 学习
 ## cmsblogs-死磕Java并发
 > [全系列](http://cmsblogs.com/?p=2122)地址
 
