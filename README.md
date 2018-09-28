@@ -1,7 +1,5 @@
 # after-reading
 读后感、问题记录
-
-
 ## 2018年一月
 1. [volatile关键字的作用](https://github.com/lqclester/after-reading/blob/master/2018-01/volatile%E7%9A%84%E4%BD%9C%E7%94%A8.md)
 2. [单例模式](https://github.com/lqclester/after-reading/blob/master/2018-01/singleton.md)
@@ -18,6 +16,9 @@
 4. [重温单例模式](https://github.com/lqclester/after-reading/blob/master/2018-03/Singleton.md)
 
 ## 2018年四月
+
+
+# 小工具
 
 # 学习中
 ## cmsblogs-死磕Java并发
